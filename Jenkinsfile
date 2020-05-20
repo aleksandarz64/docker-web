@@ -1,4 +1,4 @@
-node {
+pipeline {
    agent any
    environment {
        //GIT_URL = 'https://github.com/aleksandarz64/docker-web.git'
