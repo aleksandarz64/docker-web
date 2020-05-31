@@ -43,7 +43,7 @@ pipeline {
           }
       }
    }
-   } // end stages
+   //} // end stages
    //post {
    //  always {
    //    echo "Build stage complete"
