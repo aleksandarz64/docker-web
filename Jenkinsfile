@@ -44,16 +44,16 @@ pipeline {
       }
    }
    } // end stages
-   post {
-     always {
-       echo "Build stage complete"
-     }
-     failure {
-       echo "Build failed"
-       //mail body: 'build failed', subject: 'Build failed!', to: 'devops@company.com'
-     }
-     success {
-       echo "Build succeeded"
-       //mail body: 'build succeeded', subject: 'Build Succeeded', to: 'devops@company.com'
-     }
+   //post {
+   //  always {
+   //    echo "Build stage complete"
+   //  }
+   //  failure {
+   //    echo "Build failed"
+   //    //mail body: 'build failed', subject: 'Build failed!', to: 'devops@company.com'
+   //  }
+   //  success {
+   //    echo "Build succeeded"
+   //    //mail body: 'build succeeded', subject: 'Build Succeeded', to: 'devops@company.com'
+   //  }
 }
