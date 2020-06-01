@@ -42,6 +42,11 @@ pipeline {
               sh "sudo docker image push $DOCKER_USERNAME/$APP_NAME:$BUILD_NUMBER" 
           }
       }
+      stage ('Notify') {
+         steps {
+              slackSend(channel:'update', message: "Job is successful, here is the info -  Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+         }
+      }
    }
    //} // end stages
    //post {
